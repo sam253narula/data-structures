@@ -1,6 +1,7 @@
 package com.learning.searchingalgo;
 
 //A simple solution is to run three loops, three loops pick three array elements and check if current three elements form a Pythagorean Triplet.
+//O(n3)
 public class PythagoreanTripleWithWorstTimeComplexity {
     
     private static boolean triple(int[] arr, int n){
