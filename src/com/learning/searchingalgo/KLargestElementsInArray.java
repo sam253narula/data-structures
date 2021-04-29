@@ -2,12 +2,15 @@ package com.learning.searchingalgo;
 
 
 import java.util.*;
+
+// K largest elements from a big file or array.
+
 class KLargestElementsInArray
 {
     //Function to return k largest elements from an array.
     public static ArrayList<Integer> kLargest(int arr[], int n, int k)
     {
-        // code here
+        // below method works for pre determined number of k
 //        ArrayList<Integer> result = new ArrayList<>();
 //        int first=0;
 //        int second=0;
@@ -22,6 +25,7 @@ class KLargestElementsInArray
 //        result.add(first);
 //        result.add(second);
 
+        // below method works for any k
         ArrayList<Integer> result = new ArrayList<>();
         Integer[] obj_arr = Arrays.stream(arr).boxed().toArray(Integer[] ::new);
 
